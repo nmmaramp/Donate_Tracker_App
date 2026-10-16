@@ -1,0 +1,24 @@
+{
+  "name": "donate-tracker-desktop",
+  "version": "6.4.8",
+  "description": "Donate Tracker Desktop App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.0"
+  },
+  "build": {
+    "appId": "com.donatetracker.desktop",
+    "productName": "DonateTracker",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable"
+    }
+  }
+}
